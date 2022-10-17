@@ -1,0 +1,8 @@
+.ShopContainer {
+  padding: 0px 150px;
+}
+.ShopcardsHolder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -7,6 +7,7 @@ import Featured from "./components/Featured/Featured";
 import Footer from "./components/Footer/Footer";
 import AsSeenOn from "./components/AsSeenOn/AsSeenOn";
 import RecommendedVideos from "./components/RecommendedVideos/RecommendedVideos";
+import Shop from "./components/Shop/Shop";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <NavBar />
         <LandingSection />
         <Featured />
+        <Shop />
         <RecommendedVideos />
         <AsSeenOn />
         <Footer />
