@@ -1,0 +1,27 @@
+.adver {
+  background-color: #33333a;
+  margin: 0 auto;
+  color: white;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  line-height: 2.2;
+  animation: ChangeColor 3s infinite;
+}
+@keyframes ChangeColor {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(255, 0, 179);
+  }
+  75% {
+    color: rgb(0, 204, 255);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}

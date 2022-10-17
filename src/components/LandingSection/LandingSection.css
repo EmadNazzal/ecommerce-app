@@ -1,0 +1,37 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.LandingSection {
+  height: calc(100vh - 140px);
+  background-image: url(../../../public/images/sliderimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.LandingSection h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.LandingSection button {
+  padding: 5px;
+  outline: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+}

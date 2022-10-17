@@ -1,0 +1,71 @@
+footer {
+  max-width: 100vw;
+  min-height: 320px;
+  background-color: #33333a;
+  color: white;
+  padding: 40px 150px;
+}
+
+/* .FooterContainer {
+  position: relative;
+} */
+
+.leftSideContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  margin: 5px;
+}
+
+.first h3,
+.second h3,
+.third h3,
+.fourth h3 {
+  margin-bottom: 20px;
+}
+
+.first p,
+.second p,
+.third p {
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+
+.fourth form input {
+  width: 360px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #666666;
+  background-color: #33333a;
+  color: #dedede;
+  text-align: center;
+}
+.fourth form button {
+  width: 166px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  color: #33333a;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.copyRightMark {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}

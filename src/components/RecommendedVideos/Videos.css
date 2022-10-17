@@ -1,0 +1,21 @@
+.videoCard {
+  width: 360px;
+  height: calc(70px+240px);
+  margin: 7px;
+  padding: 5px;
+}
+.videoCard p {
+  padding: 5px 0px;
+}
+
+.videoImg {
+  max-width: 360px;
+  height: 240px;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

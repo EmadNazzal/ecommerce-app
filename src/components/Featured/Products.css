@@ -1,0 +1,36 @@
+.ProductsContainer {
+  padding: 0px 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cardHolder {
+  margin: 5px;
+  padding: 0px 5px;
+  width: 263px;
+  height: 480px;
+}
+/* .cardHolder:nth-of-type(even) {
+  background-color: #f7f7f7;
+} */
+
+.cardHolder img {
+  width: 263px;
+  height: 390px;
+}
+
+.cardHolder p {
+  padding: 5px 0px;
+}
+.cardHolder small {
+  padding: 5px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
