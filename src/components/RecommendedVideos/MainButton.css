@@ -1,0 +1,17 @@
+.ShowMoreBtn {
+  width: 130px;
+  height: 40px;
+  background-color: #33333a;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin: 15px auto 0px auto;
+  display: block;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.ShowMoreBtn:hover {
+  border: 1px solid #33333a;
+  color: #33333a;
+  background-color: #ffffff;
+}
