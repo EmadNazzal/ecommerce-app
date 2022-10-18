@@ -1,0 +1,41 @@
+export const exploreData = [
+  {
+    locDate: new Date().toISOString().split("T")[0],
+    title: "Connected Clothing: Raye Padit",
+    para: "As a voice for conscious fashion, Raye Padit is motivated by the belief that one person’s actions, no matter how small, holds great impact. This core ideal has driven him to start his three passion projects: Connected Threads Asia, PeyaR, and Swagalls. ",
+    pic: "./images/explore/1.png",
+    isPic: true,
+    isPara: true,
+    isClass: true,
+  },
+  {
+    locDate: new Date().toISOString().split("T")[0],
+    title: "Kérastase: A Collaboration",
+    para: "",
+    pic: "./images/explore/2.png",
+    isPic: true,
+    isPara: false,
+  },
+  {
+    locDate: new Date().toISOString().split("T")[0],
+    title: "Remarkable Resilience: Grace Kim",
+    para: "A woman in my life who has shown remarkable resilience is my best friend Grace. Since she was a kid, she struggled with general anxiety disorder and panic disorder.",
+    isPic: false,
+    isPara: true,
+  },
+  {
+    locDate: new Date().toISOString().split("T")[0],
+    title: "Jaclynn Seah",
+    para: "Jaclynn’s wandering spirit has brought her from the lush greenery of South America to the craters of Indonesia.",
+    isPic: false,
+    isPara: true,
+  },
+  {
+    locDate: new Date().toISOString().split("T")[0],
+    title: "How To Wear The Lounge Lunghi",
+    para: "",
+    pic: "./images/explore/3.png",
+    isPic: true,
+    isPara: false,
+  },
+];

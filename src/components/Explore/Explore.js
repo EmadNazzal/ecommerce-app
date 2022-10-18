@@ -1,16 +1,27 @@
 import React from "react";
 import "./Explore.css";
 import HeadingTitle from "../Featured/HeadingTitle";
+import { exploreData } from "./exploreData";
+
 const Explore = () => {
   return (
     <div className="ExploreContainer">
       <HeadingTitle title="Explore" />
       <div className="ParentGridContainer">
-        <div className="first"></div>
-        <div className="second"></div>
-        <div className="third"></div>
-        <div className="fourth"></div>
-        <div className="fifth"></div>
+        {exploreData.map((ele) => {
+          return (
+            <div className={`everyCard ${ele.isClass ? "uniqueCard" : ""}`}>
+              <small>{ele.locDate}</small>
+              <h2>{ele.title}</h2>
+              {ele.isPara ? <p>{ele.para}</p> : ""}
+              {ele.isPic ? (
+                <img src={ele.pic} alt="explore" className="exploreImg" />
+              ) : (
+                ""
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
