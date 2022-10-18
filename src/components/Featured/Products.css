@@ -11,10 +11,13 @@
   padding: 5px 5px;
   width: 263px;
   height: 480px;
-  transition: 0.4s ease-in-out;
+  transition: 0.5s ease-in-out;
+  position: relative;
 }
 .cardHolder:hover {
+  transform: scale(1.05, 1.05);
   background-color: rgba(195, 199, 202, 0.274);
+  border-radius: 3px;
 }
 /* .cardHolder:nth-of-type(even) {
   background-color: #f7f7f7;
@@ -23,6 +26,28 @@
 .cardHolder img {
   width: 263px;
   height: 390px;
+}
+.MainProductBtn {
+  width: 180px;
+  height: 50px;
+  background-color: #33333a;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.cardHolder:hover img {
+  opacity: 0.3;
+}
+.cardHolder:hover .MainProductBtn {
+  opacity: 1;
 }
 
 .cardHolder p {
