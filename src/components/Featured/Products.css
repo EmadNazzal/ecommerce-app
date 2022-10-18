@@ -8,9 +8,13 @@
 
 .cardHolder {
   margin: 5px;
-  padding: 0px 5px;
+  padding: 5px 5px;
   width: 263px;
   height: 480px;
+  transition: 0.4s ease-in-out;
+}
+.cardHolder:hover {
+  background-color: rgba(195, 199, 202, 0.274);
 }
 /* .cardHolder:nth-of-type(even) {
   background-color: #f7f7f7;
