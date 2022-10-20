@@ -11,7 +11,7 @@ export const productsInfo = [
   {
     id: 2,
     img: "./images/products/product-home-2.png",
-    title: "Pueraria Mirifica And Study Phyto Estrogens",
+    title: "Pueomo Melkato Eavtreno Yoloaki Materve",
     price: "599",
     isNew: true,
     country: "en-US",
