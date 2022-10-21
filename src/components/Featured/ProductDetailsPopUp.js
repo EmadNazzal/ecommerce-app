@@ -4,26 +4,37 @@ import "./ProductDetailsPopUp.css";
 const ProductDetailsPopUp = () => {
   return (
     <div className="mainProductContainer">
-      <div className="rightSidePics"></div>
+      <div className="rightSidePics">
+        <img src="./images/products/product-home-1.png" alt="product" />
+        <img src="./images/products/product-home-1.png" alt="product" />
+        <img src="./images/products/product-home-1.png" alt="product" />
+        <img src="./images/products/product-home-1.png" alt="product" />
+        <img src="./images/products/product-home-1.png" alt="product" />
+      </div>
       <div className="mainPic">
-        <img src="" alt="" />
+        <img src="./images/products/product-home-1.png" alt="product" />
       </div>
       <div className="productInformation">
-        <h3>title</h3>
+        <h3>The Sideswept Dhoti + Bottom Line Grey (Silk)</h3>
+        <hr />
         <div className="priceAndRating">
           <span>price</span>
           <span>rating</span>
         </div>
         <h4>Description</h4>
-        <p>Descriptoon paragraph</p>
+        <p>
+          Inspired by the continuous length of the lunghi or sarong seen in hot
+          climates everywhere from South Asia to the Horn of Africa and southern
+          Arabian pen…{" "}
+        </p>
         <span>Brand</span>
         <span>Category</span>
         <h4>Quantity</h4>
         <div className="quantityInfo">
-          <button>-</button>
-          <input type="number" />
-          <button>+</button>
-          <button>ADD TO CART</button>
+          <button className="minusBtn">-</button>
+          <input type="text" />
+          <button className="plusBtn">+</button>
+          <button className="addToCart">ADD TO CART</button>
         </div>
       </div>
     </div>

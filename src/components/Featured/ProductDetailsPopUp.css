@@ -1,0 +1,88 @@
+.mainProductContainer {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.mainProductContainer .rightSidePics {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainProductContainer .rightSidePics img {
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+  border: 1px solid rgba(51, 51, 51, 0.623);
+  cursor: pointer;
+}
+
+.mainProductContainer .mainPic {
+  width: 80%;
+  height: 100%;
+}
+.mainProductContainer .mainPic img {
+  width: 75%;
+  height: 85%;
+}
+.productInformation {
+  flex-basis: 65%;
+  margin-left: -100px;
+}
+
+.productInformation h3 {
+  width: 100%;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  /* box-shadow: 0px 3px 5px rgba(122, 119, 119, 0.377); */
+}
+.productInformation hr {
+  border: 1px solid rgba(97, 97, 97, 0.308);
+  outline: none;
+}
+
+.priceAndRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInformation p {
+  padding: 3px;
+  line-height: 1.2;
+}
+
+.minusBtn,
+.plusBtn {
+  width: 38px;
+  height: 38px;
+  /* padding: 3px; */
+  /* font-size: 25px; */
+  outline: none;
+  border: 1px solid rgb(222, 222, 222);
+  background-color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+.quantityInfo input {
+  width: 38px;
+  height: 38px;
+  outline: none;
+  border: 1px solid rgb(222, 222, 222);
+  border-left: none;
+  border-right: none;
+}
+.quantityInfo .addToCart {
+  width: 180px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #33333a;
+  color: white;
+  size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 7px;
+}
