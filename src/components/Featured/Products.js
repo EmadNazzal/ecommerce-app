@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { productsInfo } from "./ProductsData";
 import Modal from "react-modal";
 import "./Products.css";
+import ProductDetailsPopUp from "./ProductDetailsPopUp";
 
 // import MainProductBtn from "./MainProductBtn";
 Modal.setAppElement("#root");
@@ -28,7 +29,13 @@ export default class Products extends Component {
               </button>
               <Modal
                 className="mainModal"
-                style={{ overlay: { backgroundColor: "#3333", opacity: 0.4 } }}
+                style={{
+                  overlay: {
+                    backgroundColor: "#3333",
+                    opacity: 0.4,
+                    transition: "0.4s",
+                  },
+                }}
                 isOpen={this.state.modalIsOpen}
                 onRequestClose={this.CloseModal}
               >
@@ -36,6 +43,7 @@ export default class Products extends Component {
                   <h3>{item.title}</h3>
                   <button onClick={this.CloseModal}>×</button>
                 </div>
+                <ProductDetailsPopUp />
               </Modal>
               <p>{item.title}</p>
               <small>{`${item.price} ${item.currency}`}</small>

@@ -9,8 +9,16 @@ import AsSeenOn from "./components/AsSeenOn/AsSeenOn";
 import RecommendedVideos from "./components/RecommendedVideos/RecommendedVideos";
 import Shop from "./components/Shop/Shop";
 import Explore from "./components/Explore/Explore";
+import axios from "axios";
 
+const api = axios.create({
+  baseURL: "https://dummyjson.com/products/",
+});
 class App extends Component {
+  constructor() {
+    super();
+    api.get("/").then((res) => console.log(res.data.products[0]));
+  }
   render() {
     return (
       <>

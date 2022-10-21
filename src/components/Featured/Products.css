@@ -64,19 +64,6 @@
 }
 /* ------------------------------------- PopUp Modal ----------------------------------------- */
 
-/* .ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity 400ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open {
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close {
-  opacity: 0;
-} */
-
 .popupHeader {
   display: flex;
   justify-content: space-between;
@@ -108,8 +95,21 @@
   height: 80%;
   border: 1px solid #3333;
   background-color: white;
+  transition: opacity 0.4s ease-in-out;
   /* background-color: aquamarine; */
 }
+/* .ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+} */
 
 /* [overlayClassName="overLayClass"] {
   background-color: #33333a;
