@@ -27,8 +27,14 @@ const ProductDetailsPopUp = () => {
           climates everywhere from South Asia to the Horn of Africa and southern
           Arabian pen…{" "}
         </p>
-        <span>Brand</span>
-        <span>Category</span>
+        <div className="brandName">
+          <h4>Brand</h4>
+          <p>Brand Name</p>
+        </div>
+        <div className="categoryName">
+          <h4>Category</h4>
+          <p>Category Name</p>
+        </div>
         <h4>Quantity</h4>
         <div className="quantityInfo">
           <button className="minusBtn">-</button>

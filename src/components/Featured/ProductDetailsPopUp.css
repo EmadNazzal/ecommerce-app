@@ -44,11 +44,40 @@
   outline: none;
 }
 
+.brandName,
+.categoryName {
+  color: #33333a;
+  /* padding: 5px;
+  margin: 5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #33333a65;
+}
+
+.productInformation p {
+  padding: 5px;
+  margin: 5px;
+  line-height: 1.2;
+  color: #33333a;
+}
+
 .priceAndRating {
   display: flex;
   justify-content: space-between;
 }
+.priceAndRating span {
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  color: #ff6008;
+}
 
+.productInformation h4 {
+  padding: 5px;
+  margin: 5px;
+  color: #33333a;
+}
 .productInformation p {
   padding: 3px;
   line-height: 1.2;
@@ -64,6 +93,11 @@
   border: 1px solid rgb(222, 222, 222);
   background-color: rgb(243, 243, 243);
   cursor: pointer;
+}
+
+.quantityInfo {
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .quantityInfo input {
@@ -84,5 +118,5 @@
   size: 12px;
   font-weight: 500;
   cursor: pointer;
-  margin-left: 7px;
+  margin-left: 15px;
 }

@@ -24,7 +24,11 @@ export default class Products extends Component {
           return (
             <div className="cardHolder" key={item.id}>
               <img src={item.img} alt="Products" />
-              <button onClick={this.OpenModal} className="MainProductBtn">
+              <button
+                onClick={this.OpenModal}
+                key={item.id}
+                className="MainProductBtn"
+              >
                 QUICK VIEW
               </button>
               <Modal
