@@ -3,11 +3,23 @@ import { productsInfo } from "./ProductsData";
 import Modal from "react-modal";
 import "./Products.css";
 import ProductDetailsPopUp from "./ProductDetailsPopUp";
+import axios from "axios";
 
 // import MainProductBtn from "./MainProductBtn";
 Modal.setAppElement("#root");
 export default class Products extends Component {
-  state = { modalIsOpen: false };
+  state = {
+    productsData: [],
+    modalIsOpen: false,
+  };
+  componentDidMount() {
+    axios.get("https://dummyjson.com/products").then((res) => {
+      console.log(res.data.products);
+      this.setState({ productsData: res.data.products });
+      console.log(this.state.productsData);
+    });
+  }
+
   OpenModal = () => {
     this.setState({ modalIsOpen: true });
   };
@@ -50,7 +62,7 @@ export default class Products extends Component {
                 <ProductDetailsPopUp />
               </Modal>
               <p>{item.title}</p>
-              <small>{`${item.price} ${item.currency}`}</small>
+              <small>{`${item.price} USD`}</small>
             </div>
           );
         })}
