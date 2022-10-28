@@ -1,7 +1,9 @@
 // import React from "react";
 // import "./MainProductBtn.css";
 
-// const MainProductBtn = () => {
+// const MainProductBtn = (props) => {
+//     const {className} = props
+
 //   return <button className="MainProductBtn">QUICK VIEW</button>;
 // };
 

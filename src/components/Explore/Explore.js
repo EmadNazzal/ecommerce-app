@@ -10,7 +10,10 @@ const Explore = () => {
       <div className="ParentGridContainer">
         {exploreData.map((ele) => {
           return (
-            <div className={`everyCard ${ele.isClass ? "uniqueCard" : ""}`}>
+            <div
+              className={`everyCard ${ele.isClass ? "uniqueCard" : ""}`}
+              key={Math.random() * 20}
+            >
               <small>{ele.locDate}</small>
               <h2>{ele.title}</h2>
               {ele.isPara ? <p>{ele.para}</p> : ""}

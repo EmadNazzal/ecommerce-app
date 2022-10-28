@@ -4,13 +4,14 @@ import Modal from "react-modal";
 import "./Products.css";
 import ProductDetailsPopUp from "./ProductDetailsPopUp";
 import axios from "axios";
-
+// import MainProductBtn from "./MainProductBtn";
 // import MainProductBtn from "./MainProductBtn";
 Modal.setAppElement("#root");
 export default class Products extends Component {
   state = {
     productsData: [],
     modalIsOpen: false,
+    viewModal: productsInfo.id,
   };
   componentDidMount() {
     axios.get("https://dummyjson.com/products").then((res) => {
@@ -21,7 +22,7 @@ export default class Products extends Component {
   }
 
   OpenModal = () => {
-    this.setState({ modalIsOpen: true });
+    this.setState({ modalIsOpen: true, viewModal: productsInfo.id });
   };
   CloseModal = () => {
     this.setState({ modalIsOpen: false });
