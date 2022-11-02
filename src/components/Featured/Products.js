@@ -11,7 +11,7 @@ export default class Products extends Component {
   state = {
     productsData: [],
     modalIsOpen: false,
-    viewModal: productsInfo.id,
+    currentItem: null,
   };
   componentDidMount() {
     axios.get("https://dummyjson.com/products").then((res) => {
@@ -21,13 +21,15 @@ export default class Products extends Component {
     });
   }
 
-  OpenModal = () => {
-    this.setState({ modalIsOpen: true, viewModal: productsInfo.id });
+  OpenModal = (item) => {
+    this.setState({ modalIsOpen: true, currentItem: item });
   };
   CloseModal = () => {
     this.setState({ modalIsOpen: false });
   };
-
+  changeProduct = (item, index) => {
+    this.setState({ showProduct: item });
+  };
   render() {
     // const {id, img, title, price, isNew, country, currency} = productsInfo
 
@@ -38,13 +40,17 @@ export default class Products extends Component {
             <div className="cardHolder" key={item.id}>
               <img src={item.img} alt="Products" />
               <button
-                onClick={this.OpenModal}
-                key={item.id}
+                onClick={() => {
+                  this.OpenModal();
+                  console.log(index);
+                }}
                 className="MainProductBtn"
               >
                 QUICK VIEW
               </button>
+
               <Modal
+                key={index}
                 className="mainModal"
                 style={{
                   overlay: {

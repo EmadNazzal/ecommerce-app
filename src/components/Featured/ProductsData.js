@@ -65,7 +65,7 @@ export const productsInfo = [
   {
     id: 8,
     img: "./images/products/product-home-8.png",
-    title: "Pueraria Mirifica And Study Phyto Estrogens",
+    title: "Santgo Juhalfo Alrerode Neyholyad Afo Afo yara yara ",
     price: "599",
     isNew: false,
     country: "en-US",
