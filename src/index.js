@@ -5,4 +5,4 @@ import App from "./App";
 import Appearls from "./views/Appearls";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Appearls />);
+root.render(<App />);

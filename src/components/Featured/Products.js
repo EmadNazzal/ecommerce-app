@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { productsInfo } from "./ProductsData";
+// import { productsInfo } from "./ProductsData";
 import Modal from "react-modal";
 import "./Products.css";
 import ProductDetailsPopUp from "./ProductDetailsPopUp";
@@ -12,33 +12,49 @@ export default class Products extends Component {
     productsData: [],
     modalIsOpen: false,
     currentItem: null,
+    title: null,
+    description: null,
+    price: null,
+    rating: null,
+    image: null,
+    category: null,
   };
   componentDidMount() {
-    axios.get("https://dummyjson.com/products").then((res) => {
-      console.log(res.data.products);
-      this.setState({ productsData: res.data.products });
-      console.log(this.state.productsData);
+    axios.get("https://fakestoreapi.com/products").then((res) => {
+      console.log(res.data);
+      this.setState({ productsData: res.data });
+      // console.log(this.state.productsData);
     });
   }
-
   OpenModal = (item) => {
-    this.setState({ modalIsOpen: true, currentItem: item });
+    this.setState({
+      modalIsOpen: true,
+      currentItem: item,
+      // title: item,
+      // description: item,
+      // price: item,
+      // rating: item,
+      // image: item,
+      // category: item,
+    });
   };
   CloseModal = () => {
     this.setState({ modalIsOpen: false });
   };
-  changeProduct = (item, index) => {
-    this.setState({ showProduct: item });
-  };
+  // changeProduct = (item, index) => {
+  //   this.setState({ showProduct: item });
+  // };
   render() {
+    console.log(this.state.productsData);
+
     // const {id, img, title, price, isNew, country, currency} = productsInfo
 
     return (
       <div className="ProductsContainer">
-        {productsInfo.map((item, index) => {
+        {this.state.productsData.map((item, index) => {
           return (
             <div className="cardHolder" key={item.id}>
-              <img src={item.img} alt="Products" />
+              <img src={item.image} alt="Products" />
               <button
                 onClick={() => {
                   this.OpenModal();
@@ -66,7 +82,15 @@ export default class Products extends Component {
                   <h3>{item.title}</h3>
                   <button onClick={this.CloseModal}>×</button>
                 </div>
-                <ProductDetailsPopUp />
+                <ProductDetailsPopUp
+                  title={item.title}
+                  description={item.description}
+                  price={item.price}
+                  rating={item.rating.rate}
+                  image={item.image}
+                  currentItem={this.state.currentItem}
+                  category={item.category}
+                />
               </Modal>
               <p>{item.title}</p>
               <small>{`${item.price} USD`}</small>

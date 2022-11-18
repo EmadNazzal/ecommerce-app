@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import LandingSection from "../components/LandingSection/LandingSection";
 import Products from "../components/Featured/Products";
+import Filter from "../components/Filter/Filter";
 
 const Appearls = () => {
   return (
@@ -13,7 +14,7 @@ const Appearls = () => {
       <LandingSection />
       <div className="productsAndFilterContainer">
         <Products />
-        {/*here goes the filter component */}
+        <Filter />
       </div>
       <Footer />
     </div>

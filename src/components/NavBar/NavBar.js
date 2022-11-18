@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -10,16 +11,16 @@ const NavBar = () => {
           <img src="./images/logo.jpg" alt="Logo" />
           <ul>
             <li>
-              <a href="#">SHOP</a>
+              <Link to="/shop">SHOP</Link>
             </li>
             <li>
-              <a href="#">FABRIC</a>
+              <Link to="#">FABRIC</Link>
             </li>
             <li>
-              <a href="#">JOURNAL</a>
+              <Link to="#">JOURNAL</Link>
             </li>
             <li>
-              <a href="#">ABOUT</a>
+              <Link to="#">ABOUT</Link>
             </li>
           </ul>
         </div>
